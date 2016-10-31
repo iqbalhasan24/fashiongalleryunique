@@ -1,0 +1,320 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+  position: relative; 
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height   margin-bottom: 0px;*/
+     
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: 'Lato', Arial, sans-serif;
+    font-style: normal;
+    font-weight:  normal;  
+   
+}
+
+h1,h2,h3,h4,h5,h6 {
+ 
+    font-style: normal;
+    font-weight: 400;
+    line-height:1;
+
+
+}
+ul, li {  
+       transition: 0.3s all ease-in;
+        transition:0.3s all ease-in;
+      -webkit-transition:0.3s all ease-in;
+      -moz-transition:0.3s all ease-in; 
+    }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: top;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+b {
+  font-weight: 600;
+}
+strong {
+  font-weight: 700;
+}
+a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+   -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.clr {
+  clear: both;
+}
+h3 { font-size: 18px; }
+h3 { font-size: 16px; }
+
+header { min-height: 80px; background: #f0f0f0; border-bottom: 1px solid #c6c6c6; 
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+   }
+
+.navbar-default { background: #53565b; border-color: #53565b; color: #fff; }
+.navbar-default .navbar-nav > li > a { color:#ffffff; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover
+{ background: #ededed; color: #53565b; border-bottom: 8px solid #01427a; }
+.navbar { border-radius: 0; }
+.navbar-nav > li > a { padding-top: 10px; padding-bottom: 8px; font-size: 14px; font-weight: normal; text-align: center; line-height: 16px; }
+.navbar-default .navbar-nav > li > a {  background: none;  border-bottom: 8px solid #292C2D; }
+.nav > li {  font-size: 13px;    margin-right: 38px;  }
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {  background: #ededed; color: #53565b; border-bottom: 8px solid #01427a; }
+.logo { padding-top: 10px; }
+/*----------------- Login Panel ----------------*/
+/*----------------------------------------------*/
+.loginform {  
+
+  display: inline;
+    vertical-align: middle;
+    float: none; 
+    top: 50%;
+    padding-top: 200px;
+
+  }
+.panel-info > .panel-heading {
+    background-color: #53565b;
+    border-color: #bce8f1;
+    color: #fff !important;
+    font-weight: 700 !important;
+}
+
+.panel-body {
+    padding: 25px;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-info {
+    background-color: #01427a;
+    border-color: #01427a;
+    color: #fff !important;
+}
+
+.btn-info:hover {
+    background-color: #035296;
+    border-color: #035296;
+    color: #fff !important;
+}
+.form-control { height: 34px; }
+.margin-top-10 { margin-top: 10px; }
+
+
+/*----------------- Home Section  -----------*/
+/*----------------------------------------------*/
+.drak-grey {
+    background-color: #53565a;
+    padding: 40px;
+    display: block;
+    color: #fff;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+.gray-bg.small-grey {
+    padding: 30px;
+     display: block;
+     margin-bottom: 50px;
+}
+.gray-bg {
+    background-color: #edeeee;
+    padding: 60px 0;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.home-list { list-style: none; }
+.home-list > li > a > div >  h2 { color:#00427a; font-size: 17px; font-weight: 700; }
+.home-list > li > a > div >  p {  font-size: 14px; }
+.home-list > li  {   float: none; display: flex; list-style: none; clear: both;  min-height:160px; margin-bottom: 10px; margin-top: 10px; padding: 10px 0px; }
+
+.home-list > li:nth-child(odd)  { background: #eeefef; }
+.home-list > li:hover  { 
+  background: #d9dcdc;       
+        transition:0.3s all ease-in;
+      -webkit-transition:0.3s all ease-in;
+      -moz-transition:0.3s all ease-in; 
+    }
+
+.home-list > li { 
+      transition: 0.3s all ease-out;       
+      -webkit-transition: 0.3s all ease-out;
+      -moz-transition: 0.3s all ease-out;
+       box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    }
+.home-list > li  img { 
+      transition: 0.3s all ease-out;       
+      -webkit-transition: 0.3s all ease-out;
+      -moz-transition: 0.3s all ease-out;
+       box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    }
+.home-list > li:hover  img  { 
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition:0.3s all ease-in;
+      -webkit-transition:0.3s all ease-in;
+      -moz-transition:0.3s all ease-in; 
+    }
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+
+/*----------------- Details Section  -----------*/
+/*----------------------------------------------*/
+.details-ul li {list-style: square; margin-left: 12px; color: #aa0000;}
+.details-ul li a {color: #aa0000; }
+.wc-details-con p { margin-bottom: 15px; }
+
+.wc-details-con-02 { margin-left: 20px; }
+.wc-details-con-02 h2 { border-bottom: 1px solid #d7d7d7; padding-bottom: 10px; }
+.wc-details-con-02 li {list-style: square; margin-left: 12px; }
+.wc-details-con-02 li a { }
+.wc-details-con-02 p { margin-bottom: 15px; }
+.wc-widget { background:#edeeee; display: inline-block; padding: 25px; margin-top: 40px;  }
+.wc-widget h2 { color: #aa0000; }
+.wc-widget h3 { color: #aa0000; font-weight: normal; }
+.wc-widget p { margin-bottom: 15px;  }
+.wc-widget > .col-md-4 a {    
+  display: inline-block;
+    margin-left: 10%;
+    margin-top: 30px;
+    width: 80%; 
+  }
+/*----------------- Footer Section  -----------*/
+/*----------------------------------------------*/
+.footer {
+  position: relative;  
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  border-top: 4px solid #c8c8c8; 
+  background-color: #303030;
+  color: #ffffff;
+  padding: 20px 0;
+  min-height: 60px;
+  margin-top: 50px;
+}
+
+.login{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  border-top: 4px solid #c8c8c8; 
+  background-color: #303030;
+  color: #ffffff;
+  padding: 20px 0;
+  min-height: 60px;
+}
+
+
+.footer ul {
+    list-style: outside none none;
+    padding: 0;
+    text-align: right;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 10px 4px 0 0;
+}
+
+.footer ul li a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    margin: 15px 0;
+}
+.footer p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+
+
+@media(max-width:767px) {
+  .footer {
+  position: relative;
+}
+
+.logo1 { display: none; }
+.logo2 { display: none; }
+
+}
+
+
+@media(max-width:1199px) {
+  
+}
+
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
