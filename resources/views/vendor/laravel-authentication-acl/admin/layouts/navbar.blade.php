@@ -59,11 +59,16 @@ $user = $authentication->getLoggedUser();
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li <?php if (isset($current_route) && $current_route == "home"): ?>class="active"<?php endif; ?>><a href="{!! URL::route('home') !!}">Home <br> &nbsp; </a><li>  
-                <li <?php if (isset($current_route) && $current_route == "partnership"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('partnership') !!}">Partnership <br> &nbsp;</a></a><li>       
-                <li <?php if (isset($current_route) && $current_route == "portfolio"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('portfolio') !!}">Westcon-Comstor <br> AWS Cloud Portfolio</a><li>       
-                <li <?php if (isset($current_route) && $current_route == "training"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('training') !!}">Training <br> Enablement</a><li>       
-                <li <?php if (isset($current_route) && $current_route == "engaging"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('engaging') !!}">Engaging End <br> Customers</a><li>       
-                <li <?php if (isset($current_route) && $current_route == "support"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('support') !!}">Activition, On-boarding <br> and Support</a><li>       
+                <li <?php if (isset($current_route) && $current_route == "partnership"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('partnership') !!}">Partnership aaa<br> &nbsp;</a></a><li>       
+                <li <?php if (isset($current_route) && $current_route == "portfolio"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('portfolio') !!}">Our Products <br> &nbsp;</a><li> 
+                      
+             <!--    <li <?php if (isset($current_route) && $current_route == "training"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('training') !!}">Training <br> Enablement</a><li> -->       
+                <li <?php if (isset($current_route) && $current_route == "engaging"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('engaging') !!}">Upcoming Products <br> &nbsp;</a><li>       
+                <li <?php if (isset($current_route) && $current_route == "support"): ?>class="active" <?php endif; ?>><a href="{!! URL::route('support') !!}">About Us <br> &nbsp;</a><li> 
+
+                 <li><a href="{!! URL::route('contact.form') !!}">Contact Us <br> &nbsp;</a><li>
+
+
                 <li class="pull-right">
                     @if($user)
                     <div id="addtlLinks">
@@ -77,7 +82,9 @@ $user = $authentication->getLoggedUser();
                             @endif 
                             <a href="{!! URL::route('users.list') !!}">User List</a> 
                             <a href="{!! URL::route('users.selfprofile.edit') !!}">My Account</a>
-                            <a href="{!! URL::route('contact.form') !!}">Contact Us</a>
+
+                           <!--  <a href="{!! URL::route('contact.form') !!}">Contact Us</a> -->
+
                             <a href="{!! URL::route('user.logout') !!}">Sign Out</a>
                         </div>
                     </div>

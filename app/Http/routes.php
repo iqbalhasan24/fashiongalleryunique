@@ -47,8 +47,8 @@ Route::get('/partnership', [
     'uses' => 'WelcomeController@getpartnership'
 ]);
 
-Route::get('/westcon-comstor-aws-cloud-portfolio', [
-    'middleware' => array('logged', 'can_see'),
+Route::get('/our-products', [
+    // 'middleware' => array('logged', 'can_see'),
     'as' => 'portfolio',
     'uses' => 'WelcomeController@getportfolio'
 ]);
@@ -65,15 +65,15 @@ Route::get('/engaging-end-customers', [
     'uses' => 'WelcomeController@getengaging'
 ]);
 
-Route::get('/activition-on-boarding-and-support', [
-    'middleware' => array('logged', 'can_see'),
+Route::get('/about-us', [
+    // 'middleware' => array('logged', 'can_see'),
     'as' => 'support',
     'uses' => 'WelcomeController@getsupport'
 ]);
 
 
 Route::get('/admin/contact-us', [
-    'middleware' => array('logged', 'can_see'),
+    // 'middleware' => array('logged', 'can_see'),
     'as' => 'contact.form',
     'uses' => 'ContactController@create']);
 Route::post('/admin/contact-us', [

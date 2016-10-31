@@ -6,7 +6,6 @@
 
 @section('content')
 
-<?php $user_group = strtolower($user->groups()->first()->name); ?>
 
 <div class="container" >    
     <!-- Indicators -->       
@@ -51,7 +50,7 @@
 
         <div class="col-md-12">
             <div class=" paddedTop drak-grey">
-                <h2>{!! $page->banner_description !!}</h2>
+               <h2>{!! $page->banner_description !!}</h2>
 
             </div>
         </div>
@@ -62,8 +61,9 @@
         </div>
     </div>
 
+    {!! $page->content !!}   <!-- total page content -->
 
-    <!-- <div class="row">
+  <!-- <div class="row">
         <div class="col-md-12 wc-details-con-02">
             <h2>AWS Support Documentation</h2>
             <p><strong>What is it?</strong>&nbsp;Complete campaigns focused on seasonal conditions to increase awareness and encourage utilization.</p>
@@ -76,10 +76,9 @@
                 <li>Step 3 – Take the provided blog/article copy and banners and place them on your Intranet site, website or in a company/employee/employer/health plan/health system newsletter</li>
             </ul>
         </div>
+    </div>  -->
 
-    </div> -->
-
-    {!! $page->content !!}   <!-- total page content -->
+   
 
 </div>
 @stop

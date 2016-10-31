@@ -65,15 +65,15 @@ class WelcomeController extends Controller {
 
 
     
-    public function gettraining() {
-        $authentication = \App::make('authentication_helper');
-        $auth = \App::make('authenticator');
-        $user = $auth->getLoggedUser();
-        $videos = Article::where([['category_id', 4], ['status', 'PUBLISHED']])->get();
-        $sliders = Article::where([['category_id', 4], ['status', 'PUBLISHED']])->get();
-        $page = Page::findBySlugOrId(9);
-        return View::make('admin.pages.training')->with(['user' => $user, 'page' => $page->withFakes(), 'videos' => $videos, 'sliders' => $sliders]);
-    }
+    // public function gettraining() {
+    //     $authentication = \App::make('authentication_helper');
+    //     $auth = \App::make('authenticator');
+    //     $user = $auth->getLoggedUser();
+    //     $videos = Article::where([['category_id', 4], ['status', 'PUBLISHED']])->get();
+    //     $sliders = Article::where([['category_id', 4], ['status', 'PUBLISHED']])->get();
+    //     $page = Page::findBySlugOrId(9);
+    //     return View::make('admin.pages.training')->with(['user' => $user, 'page' => $page->withFakes(), 'videos' => $videos, 'sliders' => $sliders]);
+    // }
     
     public function getengaging() {
         $authentication = \App::make('authentication_helper');
@@ -86,12 +86,12 @@ class WelcomeController extends Controller {
     } 
     
     public function getsupport() {
-        $authentication = \App::make('authentication_helper');
-        $auth = \App::make('authenticator');
-        $user = $auth->getLoggedUser();        
+        // $authentication = \App::make('authentication_helper');
+        // $auth = \App::make('authenticator');
+        // $user = $auth->getLoggedUser();        
         $page = Page::findBySlugOrId(7);
         $sliders = Article::where([['category_id', 6], ['status', 'PUBLISHED']])->get();
-        return View::make('admin.pages.support')->with(['user' => $user, 'page' => $page->withFakes(),'sliders' => $sliders]);
+        return View::make('admin.pages.support')->with(['page' => $page->withFakes(),'sliders' => $sliders]);
     }     
     
     public function howtouse() {
